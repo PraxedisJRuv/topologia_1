@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\begin{document}
+\begin{Large}
+ Topolog\'ia - Tarea 1 \newline
+\end{Large}
+Alumnos: \newline
+Arturo Rodriguez Contreras - 2132880 \newline
+Jonathan Raymundo Torres Cardenas \newline
+Praxedis Jimenes Ruvalcaba \newline
+Erick Rom\'an Montemayor Trevi\~no \newline
+Alexis Noe Mora Leyva \newline
+
+
+Problema 1:\newline
+Sea
+$X = \{ a, b, c \}, \tau_{1} = \{\emptyset, X, \{a\} \}, $
+$ \tau_{2} = \{\emptyset, X, \{b\} \}$
+se tiene que $\tau_{1}$ es topolog\'ia ya que contiene
+al conjunto vacio, $X$, contiene las uniones arbitrarias
+$\{a\} \cup X = X \in \tau_{1}$, y tambien
+$\{a\} \cup \emptyset = \{a\} \in \tau_{1}$
+y $\emptyset \cup X = X \in \tau_{1}$
+y contiene a las intersecciones finitas de sus elementos, 
+idem para $\tau_{2}$. La union de los dos conjuntos es
+$U = \tau_{1} \cup \tau_{2} = \{ \emptyset, X, \{a\}, \{b\} \}$
+lo cual no es topolog\'ia ya que $\{a\} \cup \{b\} = \{a, b\} \notin U$
+por consequente se tiene que la union de cualesquieras dos
+topolog\'ias del mismo conjunto no est\'an
+garantizados de ser topolog\'ia \newline
+
+\hfill \break
+
+Problema 2: \newline
+Sea X un conjunto no vacio,
+$\tau = \{\emptyset, X\} \cup \{U \subset X | X - U$ es contable$\} $
+Se tiene por definicion que $\{\emptyset, X\} \subset \tau$.
+Ahora, sea $\{U_{a}\}_{a \in J}$ una coleccion de elementos en $\tau$,
+y $U = \bigcup_{a \in J} U_{a}$. Queremos ver que $U \in \tau$, para
+esto observemos que $X - U = (\bigcup_{a \in J} U_{a})^{c} $
+por leyes de De Morgan es igual a
+$\bigcap_{a \in J} U_{a}^{c}$, sabemos por teorema que
+la intersecci\'on arbitraria de conjuntos contables es tambien
+contable, entonces $\bigcap_{a \in J} U_{a}^{c} \in \tau$ para
+ya que $U_{a}^{c} = X - U_{a}$ es por definicion contable
+para todo $a \in J$. Luego, tomemos
+$\{U_{a}\}_{a \in J}$ una colecci\'on finita de elementos en
+$\tau$, y sea $U = \bigcap_{a \in J}U_{a}$ entonces tenemos
+$X - U = (\bigcap_{a \in J}U_{a})^{c}$ por leyes de DeMorgan
+es igual a $\bigcup_{a \in J}U_{a}^{c}$ y por teorema
+la union finita de conjuntos contables es tambien
+contable. Entonces $X - U$ es contable, por lo cual
+se tiene que $U \in \tau$ entonces $\tau$ esta
+cerrado por intersecci\'on finita, como consequente es
+una topolog\'ia\newline
+
+\hfill \break
+
+Problema 3: \newline
+Sea $X$ un conjunto infinito,
+$\tau = \{\emptyset, X\} \cup \{U \subset X | X - U$ es infinito$\} $
+Sean $a, b \in X,$ y sea $S = X - \{a, b\}$. Observamos que
+S no est\'a en X, ya que $X - S = \{a, b\}$ lo cual no es un
+conjunto infinito.Se tiene que $\forall U_{x} = \{x\} \in S, X - x$
+sigue siendo infinito, entonces todos los
+elementos individuales de S est\'an en $\tau$. Ahora, 
+tomemos $\bigcup_{x \in S} U_{x} = S$, por definicion de topologia
+S deberia estar contenido en $\tau$, ya que es una union arbitraria de
+elementos en $\tau$, pero ya hemos demostrado que $S \notin \tau$,
+entonces $\tau$ no est\'a cerrado bajo union, entonces no es topologia.\newline
+
+\hfill \break
+
+Problema 6 (4 y 5 quedan pendientes): \newline
+Sean $\tau_{\mathbb{R} \times \mathbb{R}} = \{(a, b) \times (c, d)$
+$| a < b, c < d; a, b, c, d \in \mathbb{R}\}$ y sea
+$\tau_{\mathbb{R}^{2}}$ la topolog\'ia Euclidiana normal. Queremos
+ver que son iguales. Para \'esto, tomemos un abierto
+$U \in \tau_{\mathbb{R} \times \mathbb{R}}$ sabemos que si tomamos
+$x \in U$, tiene la forma de $x = (x_{1}, x_{2})$, donde
+$x_{1} \in (a, b)$ para alguna $a, b \in \mathbb{R} | a < b$, y
+$x_{2} \in (c, d)$ para algun $c, b \in \mathbb{R} | c < d$.
+Ahora, tomemos $\varepsilon = \min\{\frac{|x_{1} - a|}{2}, \frac{|x_{1} - b|}{2},$
+$\frac{|x_{2} - c|}{2}, \frac{|x_{2} - d|}{2}$, si tomamos una bola abierta
+centrada en x con radio $\varepsilon$ lo cual es un abierto en
+$\tau_{\mathbb{R}^{2}}$. Sea $B(x, \varepsilon)$ es esa bola abierta.
+Ahora, tenemos que para todo punto $y \in B(x, \varepsilon)$ tenemos
+que $y = (y_{1}, y_{2})$, y ademas que $d(x, y) < \varepsilon$ y ademas que
+$|y_{1} - x_{1}| < d(x, y) < \varepsilon < \min{\frac{|x_{1} - a|}{2}, \frac{|x_{1} - b|}{2}}$
+entonces en particular $a < y_{1} < b$, \'idem para
+$c < y_{2} < d$, entonces $y \in U$ por lo cual
+$B(x, \varepsilon) \subset U$, y por teorema se tiene
+que la topologia producto de $\mathbb{R}^{2}$ es m\'as fina
+que la topolog\'ia euclidiana en $\mathbb{R}^{2}$. Ahora, tomemos
+un abierto $U \in \tau_{\mathbb{R}^{2}}$, y tomemos un
+$x \in \tau_{\mathbb{R}^{2}}$, sabemos que $x = (x_{1}, x_{2})$ donde
+sus componentes son n\'umeros reales, y que $\exists\varepsilon$ tal
+que $B(x, \varepsilon) \subset U$. Sea
+$\varepsilon_{1} = \frac{\varepsilon}{2}$, tomemos un conjunto
+$U_{1} = (x_{1} - \varepsilon_{1}, x_{1} + \varepsilon_{1}) \times$
+$(x_{2} - \varepsilon_{1}, x_{2} + \varepsilon_{1})$ lo cual
+es un abierto en
+$\tau_{\mathbb{R} \times \mathbb{R}}$. Tomemos un punto $y = (y_{1}, y_{2}) \in U_{1}$
+por desigualdad triangular tenemos que
+$d(x, y) < |x_{1} - y_{1}| + |x_{2} - y_{2}| <$
+$\frac{\varepsilon_{1}}{2} + \frac{\varepsilon_{1}}{2} =$
+$\varepsilon_{1}$ entonces tenemos que $y \in U \forall y \in U_{1}$, por lo cual $U_{1} \subset U$, entonces por teorema
+$\tau_{\mathbb{R}^{2}}$ es m\'as fina que la topolog\'ia producto
+de $\mathbb{R}^2$. Las dos topolog\'ias son m\'as finas entre si,
+entonces son equivalentes. 
+\end{document}

@@ -41,18 +41,40 @@ contable. Entonces $X - U$ es contable, por lo cual se tiene que $U \in \tau_{\m
 cerrado por intersecci\'on finita, como consequente es una topolog\'ia.\\
 
 \paragraph{3}
-\textit{verificar si $\tau_{\infty}$ es topologia.} 
+\textit{Verificar si $\tau_{\infty}$ es topologia.} 
 
 Sea $X=\mathbb{R}$, sea $U_1 = (-\infty,0),U_2 = (0,\infty)$, claramente $U_1,U_{2}\hspace{2px}\in\hspace{2px}\tau_{\mathbb{N}}$, pero $U=U_1\cup U_2 = (\infty,0)\cup(0,\infty)\notin \tau_{\infty}$
 ya que $\mathbb{R}-U=\{0\}$ no es infinito. Por lo tanto no cumple el axioma de uniones arbitrarias de topología.\\ $\therefore\tau_{\infty}$ no es topología.\\
 
-\textbf{Problema 4.} Demostrar que $(0,1)=\bigcup\limits_{n\in\mathbb{N}-\{1\}}[\frac{1}{n},1)$
-\\$(\subset)$ \\Sea $x\in(0,1)$, esto es $0<x<1$ , por propiedad arquimediana existe $ N \in\mathbb{N}\hspace{4px}t.q \hspace{4px} \forall n\geq N \hspace{4px} 0< \frac{1}{n} \leqslant  x<1$ entonces $x\in[\frac{1}{n},1)$
+\paragraph{4}
+\textit{Demostrar que $(0,1)=\bigcup\limits_{n\in\mathbb{N}-\{1\}}[\frac{1}{n},1)$.}
+
+$(\subset)$
+
+Sea $x\in(0,1)$, esto es $0<x<1$ , por propiedad arquimediana existe $ N \in\mathbb{N}\hspace{4px}t.q \hspace{4px} \forall n\geq N \hspace{4px} 0< \frac{1}{n} \leqslant  x<1$ entonces $x\in[\frac{1}{n},1)$
 entonces $x\in\bigcup\limits_{n\in\mathbb{N}-\{1\}}[\frac{1}{n},1)$\\$\therefore(0,1)\subset\bigcup\limits_{n\in\mathbb{N}-\{1\}}[\frac{1}{n},1)$
-\\$(\supset)$\\
+
+$(\supset)$
+
 Sea $x\in\bigcup\limits_{n\in\mathbb{N}-\{1\}}[\frac{1}{n},1)$, entonces $0<\frac{1}{n_0}\leq x<1$ para algun $n_0\in\mathbb{N}-\{1\}$\\$x\in(0,1)$\\$\therefore(0,1)\supset\bigcup\limits_{n\in\mathbb{N}-\{1\}}[\frac{1}{n},1)$
 
-\textbf{Problema 5.}
+\paragraph{7}
+\textit{Demuestra que $(A \times B) \cap (C \times D)= (A \cap C) \times (B \cap D)$.}
 
+$(\subset)$
+
+Sea $(x,y) \in (A \times B) \cap (C \times D)$. Por definición de intersección $(x,y)\in A\times B$ y $(x,y) \in C\times D$. Además, por definición
+de producto cruz $x \in A $ y $y \in B$, $x \in C$ y $y \in D$. Reescribiendo obtenemos $x\in A$ y $x\in C$, $y \in B$ y $y\in D$ \textit{i.e.}  $(x,y) \in (A \cap C)\times (B \cap D)$.
+
+$(\supset)$
+
+De forma análoga, sea $(x,y) \in (A \cap C) \times (B \times D)$ luego  $x \in A $ y $y \in B$, $x \in C$ y $y \in D$ y $(x,y) \in (A \times B) \cap (C \times D)$.
+
+\paragraph{12}
+\textit{Demuestre que $\overline{A \cap B} \subset \overline{A} \cap \overline{B}$.}
+
+Sabemos que $A \subset \overline{A}$ y $B \subset \overline{B}$. Luego $A \cap B \subset \overline{A} \cap \overline{B}$. La cerradura de un conjunto es siempre
+cerrado y la intersección de cerrados es cerrada \textit{i.e.} $A \cap \B$ está contenido en un cerrado y la cerradura es el cerrado más pequeño que contiene al conjunto. Es decir
+$\overline{A \cap B} \subset \overline{A} \cap \overline{B}$.
 
 \end{document}

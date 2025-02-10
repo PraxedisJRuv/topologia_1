@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1739165371.71337 "c:/Users/tjona/Desktop/UANL/LM/7mo/Topologia/topologia_1/main.tex" "main.pdf" "main" 1739165372.23991 0
+["pdflatex"] 1739203411.6905 "c:/Users/tjona/Desktop/UANL/LM/7mo/Topologia/topologia_1/main.tex" "main.pdf" "main" 1739203412.16014 2
   "C:/Users/tjona/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1739164273 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/tjona/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1739162453 12017794 4643b238816b944d84a5d98924ebe747 ""
   "C:/Users/tjona/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -52,9 +52,9 @@
   "C:/Users/tjona/AppData/Local/Programs/MiKTeX/tex/latex/base/article.cls" 1738160243 20144 63d8bacaf52e5abf4db3bc322373e1d4 ""
   "C:/Users/tjona/AppData/Local/Programs/MiKTeX/tex/latex/base/size12.clo" 1738160243 8449 ffe4ba2166a344827c3a832d1d5e0a91 ""
   "C:/Users/tjona/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1716480499 29785 9f93ab201fe5dd053afcc6c1bcf7d266 ""
-  "c:/Users/tjona/Desktop/UANL/LM/7mo/Topologia/topologia_1/main.tex" 1739165371 3689 abb666ffacce02e1eb3f69265599d191 ""
-  "main.aux" 1739165372 460 8fb030072957b50d457cdeef3b3bdf64 "pdflatex"
-  "main.tex" 1739165371 3689 abb666ffacce02e1eb3f69265599d191 ""
+  "c:/Users/tjona/Desktop/UANL/LM/7mo/Topologia/topologia_1/main.tex" 1739203388 4829 97bed249c420b1673d5b245db1eb248b ""
+  "main.aux" 1739203412 689 29fddede303bd2dec121dd677888c99e "pdflatex"
+  "main.tex" 1739203388 4829 97bed249c420b1673d5b245db1eb248b ""
   (generated)
   "main.aux"
   "main.log"

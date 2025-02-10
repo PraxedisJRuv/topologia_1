@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amssymb}
+\usepackage{amsmath}
+%Falta agregar una portada bien hecha aparte.
+\LARGE{\title{Tareas de primer parcial-Topología}}
+\author{Alumnos: \\Arturo Rodriguez Contreras - 2132880 \\
+Jonathan Raymundo Torres Cardenas - 1949731\\
+Praxedis Jimenes Ruvalcaba \\
+Erick Román Montemayor Treviño - 1957959 \\
+Alexis Noe Mora Leyva \\}
+\begin{document}
+\maketitle
+%Intenten usar este formato para comenzar un problema
+\paragraph{1}
+\textit{¿Es la unión de topologías una topología?}
+
+Sea $X = \{ a, b, c \}$, $\tau_{1} = \{\emptyset, X, \{a\} \}$, $ \tau_{2} = \{\emptyset, X, \{b\} \}$
+se tiene que $\tau_{1}$ es topología ya que contiene al conjunto vacio, $X$, contiene las uniones arbitrarias
+$\{a\} \cup X = X \in \tau_{1}$, y tambien
+$\{a\} \cup \emptyset = \{a\} \in \tau_{1}$
+y $\emptyset \cup X = X \in \tau_{1}$
+y contiene a las intersecciones finitas de sus elementos, 
+de igual forma se sigue que $\tau_{2}$ es topologia de $X$. La union de las dos topologías es
+$U = \tau_{1} \cup \tau_{2} = \{ \emptyset, X, \{a\}, \{b\} \}$
+lo cual no es topolog\'ia, ya que $\{a\} \cup \{b\} = \{a, b\} \notin U$, por lo tanto, no
+necesariamente la unión de topologías es una topología.\\
+
+\paragraph{2}
+\textit{Demostrar que $\tau_{\mathbb{N}}$ es topologia.}
+
+Se tiene por definicion que $\{\emptyset, X\} \subset \tau_{\mathbb{N}}$. Ahora, sea $\{U_{a}\}_{a \in J}$ una coleccion de elementos en $\tau_{\mathbb{N}}$,
+y $U = \bigcup_{a \in J} U_{a}$. Queremos ver que $U \in \tau_{\mathbb{N}}$, para
+esto observemos que $X - U = (\bigcup_{a \in J} U_{a})^{c} $ por leyes de De Morgan es igual a
+$\bigcap_{a \in J} U_{a}^{c}$, sabemos por teorema quela intersecci\'on arbitraria de conjuntos contables es tambien
+contable, entonces $\bigcap_{a \in J} U_{a}^{c} \in \tau_{\mathbb{N}}$ paraya que $U_{a}^{c} = X - U_{a}$ es por definicion contable
+para todo $a \in J$. Luego, tomemos$\{U_{a}\}_{a \in J}$ una colecci\'on finita de elementos en
+$\tau_{\mathbb{N}}$, y sea $U = \bigcap_{a \in J}U_{a}$ entonces tenemos $X - U = (\bigcap_{a \in J}U_{a})^{c}$ por leyes de DeMorgan es igual a $\bigcup_{a \in J}U_{a}^{c}$ y por teorema
+la union finita de conjuntos contables es tambien
+contable. Entonces $X - U$ es contable, por lo cual se tiene que $U \in \tau_{\mathbb{N}}$ entonces $\tau_{\mathbb{N}}$ esta
+cerrado por intersecci\'on finita, como consequente es una topolog\'ia.\\
+
+\paragraph{3}
+\textit{verificar si $\tau_{\infty}$ es topologia.} 
+
+Sea $X=\mathbb{R}$, sea $U_1 = (-\infty,0),U_2 = (0,\infty)$, claramente $U_1,U_{2}\hspace{2px}\in\hspace{2px}\tau_{\mathbb{N}}$, pero $U=U_1\cup U_2 = (\infty,0)\cup(0,\infty)\notin \tau_{\infty}$
+ya que $\mathbb{R}-U=\{0\}$ no es infinito. Por lo tanto no cumple el axioma de uniones arbitrarias de topología.\\ $\therefore\tau_{\infty}$ no es topología.\\
+
+\textbf{Problema 4.} Demostrar que $(0,1)=\bigcup\limits_{n\in\mathbb{N}-\{1\}}[\frac{1}{n},1)$
+\\$(\subset)$ \\Sea $x\in(0,1)$, esto es $0<x<1$ , por propiedad arquimediana existe $ N \in\mathbb{N}\hspace{4px}t.q \hspace{4px} \forall n\geq N \hspace{4px} 0< \frac{1}{n} \leqslant  x<1$ entonces $x\in[\frac{1}{n},1)$
+entonces $x\in\bigcup\limits_{n\in\mathbb{N}-\{1\}}[\frac{1}{n},1)$\\$\therefore(0,1)\subset\bigcup\limits_{n\in\mathbb{N}-\{1\}}[\frac{1}{n},1)$
+\\$(\supset)$\\
+Sea $x\in\bigcup\limits_{n\in\mathbb{N}-\{1\}}[\frac{1}{n},1)$, entonces $0<\frac{1}{n_0}\leq x<1$ para algun $n_0\in\mathbb{N}-\{1\}$\\$x\in(0,1)$\\$\therefore(0,1)\supset\bigcup\limits_{n\in\mathbb{N}-\{1\}}[\frac{1}{n},1)$
+
+\textbf{Problema 5.}
+
+
+\end{document}

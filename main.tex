@@ -11,7 +11,7 @@ Erick Román Montemayor Treviño - 1957959 \\
 Alexis Noe Mora Leyva \\}
 \begin{document}
 \maketitle
-%Intenten usar este formato para comenzar un problema
+
 \paragraph{1}
 \textit{¿Es la unión de topologías una topología?}
 
@@ -32,9 +32,10 @@ necesariamente la unión de topologías es una topología.\\
 Se tiene por definicion que $\{\emptyset, X\} \subset \tau_{\mathbb{N}}$. Ahora, sea $\{U_{a}\}_{a \in J}$ una coleccion de elementos en $\tau_{\mathbb{N}}$,
 y $U = \bigcup_{a \in J} U_{a}$. Queremos ver que $U \in \tau_{\mathbb{N}}$, para
 esto observemos que $X - U = (\bigcup_{a \in J} U_{a})^{c} $ por leyes de De Morgan es igual a
-$\bigcap_{a \in J} U_{a}^{c}$, sabemos por teorema quela intersecci\'on arbitraria de conjuntos contables es tambien
-contable, entonces $\bigcap_{a \in J} U_{a}^{c} \in \tau_{\mathbb{N}}$ paraya que $U_{a}^{c} = X - U_{a}$ es por definicion contable
-para todo $a \in J$. Luego, tomemos$\{U_{a}\}_{a \in J}$ una colecci\'on finita de elementos en
+$\bigcap_{a \in J} U_{a}^{c}$, sabemos por teorema que la intersecci\'on arbitraria de conjuntos contables es tambien
+contable, entonces $\bigcap_{a \in J} U_{a}^{c} \in \tau_{\mathbb{N}}$. 
+
+Luego, tomemos$\{U_{a}\}_{a \in J}$ una colecci\'on finita de elementos en
 $\tau_{\mathbb{N}}$, y sea $U = \bigcap_{a \in J}U_{a}$ entonces tenemos $X - U = (\bigcap_{a \in J}U_{a})^{c}$ por leyes de DeMorgan es igual a $\bigcup_{a \in J}U_{a}^{c}$ y por teorema
 la union finita de conjuntos contables es tambien
 contable. Entonces $X - U$ es contable, por lo cual se tiene que $U \in \tau_{\mathbb{N}}$ entonces $\tau_{\mathbb{N}}$ esta
@@ -90,19 +91,26 @@ De forma análoga, sea $(x,y) \in (A \cap C) \times (B \times D)$ luego  $x \in 
 \textit{Verificar que la topologia del orden $\tau(\beta_O)$ es topología.}
 
 \paragraph{12}
-\textit{Verificar si $\tau_O (\mathbb{N})=\tau_d (\mathbb{N})$.}
+\textit{Verificar si en $\mathbb{N}$,  $\tau_O =\tau_d$.}
+
+Veamos que las topologías coinciden.
+
+Sea $U \in \tau_O$, observe que $U= \cup_{x\in U} \{x\}$ es una unión de básicos de $\tau_d$ \textit{i.e.} $\tau_O \subset \tau_d$.
+
+De forma análoga, sea $U \in \tau_d$, y $I_x=(x-1,x+1)$ si $x \neq 1$, $I_1=[1,2)$. Note que $U=\cup_{x\in U} I_x$ es una unión de 
+basicos de $\tau_O$ y por tanto $\tau_d \subset \tau_O$. Esto demuestra que, en $\mathbb{N}$, $\tau_O =\tau_d$.
 
 \paragraph{13}
 \textit{Verificar que el orden lexicografico genera un orden en $\mathbb{R}$.}
 
 \paragraph{14}
-\textit{Verificarlas comparaciones entre $\tau_O(\mathbb{R})$ y $\tau_{d\times d}$}
+\textit{Verificar las comparaciones entre $\tau_O$ y $\tau_{d\times d}$ en $\mathbb{R}$}
 
 \paragraph{15}
 \textit{Demuestre que $\overline{A \cap B} \subset \overline{A} \cap \overline{B}$.}
 
 Sabemos que $A \subset \overline{A}$ y $B \subset \overline{B}$. Luego $A \cap B \subset \overline{A} \cap \overline{B}$. La cerradura de un conjunto es siempre
-cerrado y la intersección de cerrados es cerrada \textit{i.e.} $A \cap B$ está contenido en un cerrado y la cerradura es el cerrado más pequeño que contiene al conjunto. Es decir
+cerrado y la intersección de cerrados es cerrada, por lo que $A \cap B$ está contenido en un cerrado y la cerradura es el cerrado más pequeño que contiene al conjunto. Por lo tanto
 $\overline{A \cap B} \subset \overline{A} \cap \overline{B}$.
 
 \paragraph{16}
@@ -111,11 +119,24 @@ $\overline{A \cap B} \subset \overline{A} \cap \overline{B}$.
 \paragraph{17}
 \textit{Verificar si $X-\overline{A}=\overline{X-A}$}
 
+El resultado es en general, falso. Sea $X=\mathbb{R}$ y $A=\{0\}$ bajo la topología usual.
+ Luego $\mathbb{R}-\{0\} = X-\overline{A}\neq \overline{X-A} = \mathbb{R}$
+
 \paragraph{18}
 \textit{Considere $([0,1])^2$ bajo $\tau_{\mathbb{R}_L\times\mathbb{R}_S}$ hallar $Int([0,1]^2)$}
 
 \paragraph{19}
 \textit{Verificar si $Int(A\cap B)=Int(A)\cap Int(B)$}
+
+Es un hecho conocido que $\text{Int}(A)=\overline{A^c}^c$ y que $\overline{A \cup B}=\overline{A} \overline{B}$. Aplicando estas propiedades tenemos que 
+\begin{align*}
+    \text{Int}(A \cap B) &=\overline{(A \cap B)^c}^c \\
+                         &=(\overline{A^c \cup B^c})^c \\
+                         &=(\overline{A^c} \cup \overline{B^c})^c \\
+                         &=\overline{A^c}^c \cap \overline{B^c}^c \\
+                         &=\text{Int}(A) \cap \text{Int}(B).
+\end{align*}
+
 
 \paragraph{20}
 \textit{Verificar que si $D_{1}, D_{2}$ son densos y abiertos en $X$, entonces $D_{1} \cap D_{2}$ es denso en $X$}

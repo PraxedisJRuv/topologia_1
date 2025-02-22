@@ -71,12 +71,15 @@ Sea $x\in\bigcup\limits_{n\in\mathbb{N}-\{1\}}[\frac{1}{n},1)$, entonces $0<\fra
 \paragraph{8}
 \textit{Demostrar si $\tau_{\mathbb{R}^2}=\tau_{\mathbb{R} \times \mathbb{R}}$}
 \\Primero vemos si \( \tau_{\mathbb{R}^2}\) es más fina que \(\tau_{\mathbb{R} \times \mathbb{R}}\)
+Sea \(y\in(x,\epsilon)\) donde x denota el centro y el espilón el radio de la bola. Este es un básico en la topología \( \tau_{\mathbb{R}^2}\) y al ser topología, podemos hallar un básico \((y,\delta)\subset(x,\epsilon)\) con claramente \(\delta<\epsilon\).
+\\Si quisieramos inscribir un rectángulo, consideraríamos a \(\delta\) como la diagonal mayor, entonces, \(\delta=\frac{\sqrt{a^2+a^2}}{2}\), siendo a los lados de nuestro cuadrado. Despejando obtendríamos la expresión \(\sqrt{2}\delta=a\). Considerando a \(a<\sqrt{2}\delta\), obtendríamos el cuadrado \((y-a,y+a)\)x\((y-a,y+a)\subset(y,\delta)\subset(x,\epsilon)\). por transtitivadad de contenciones obtendríamos:
+\\\(y\in(y-a,y+a)\)x\((y-a,y+a)\subset(x,\epsilon)\)
+\\\(\therefore\tau_{\mathbb{R}^2}\subset\tau_{\mathbb{R} \times \mathbb{R}}\)
 \\Ahora verificamos la otra contención.
-\\Sea \(x\in(a,b)\)x\((c,d): a<b y c<d\)
-\\tomamos \(\delta=min\{(x,(a,b)),(x,(c,d)),(x,(a,c)),(x,(b,d))\}\)
-\\entonces, La bola \((x,\frac{\delta}{2})\subset(a,b)\)x\((c,d)\)
-\\donde \(x\in(x,\frac{\delta}{2})\)
+\\Sea \(x\in(a,b)\)x\((c,d): a<b y c<d\),
+\\tomamos \(\delta=min\{(x,(a,b)),(x,(c,d)),(x,(a,c)),(x,(b,d))\}\), entonces, La bola \((x,\frac{\delta}{2})\subset(a,b)\)x\((c,d)\), donde \(x\in(x,\frac{\delta}{2})\)
 \\\(\therefore\tau_{\mathbb{R} \times \mathbb{R}}\subset\tau_{\mathbb{R}^2}\)
+\\\(\therefore\) como se cumplen ambas contenciones; \(\therefore\tau_{\mathbb{R} \times \mathbb{R}}\tau_{\mathbb{R}^2}\)
 \paragraph{9}
 \textit{Terminar paso inductivo del teorema de las proyecciones}
 

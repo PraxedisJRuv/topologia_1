@@ -60,7 +60,17 @@ Sea $x\in\bigcup\limits_{n\in\mathbb{N}-\{1\}}[\frac{1}{n},1)$, entonces $0<\fra
 
 \paragraph{5}
 \textit{Verificar que $\beta_K$ satisface el teorema de creación de topologías.}
-%procedimiento
+\\Esto lo dividiremos en tres casos.\\
+\\Caso 1: Tomamos básicos de la forma \((a,b)\) tales que \(a<b\) de la base
+\\Los básicos son iguales a los de la topología euclidiana, para la cual sabemos que cumple el teorema de creación de topologías ya que si \(x\in B_1 \cap B_2\), entonces, existe \(B_{\alpha_0} \subset B_1 \cap B_2\) tal que \(x\in B_{\alpha_0}\).\\
+\\Caso 2: Tenemos un básico de la forma \(B_1=(a,b)\) con \(a<b\) y otro de la forma \(B_2=(c,d)-k\) con \(c<d\). Además \(x\in B_1 \cap B_2\).
+\\Notemos que \((c,d)-k\) es de la forma \(B_e-k\) con \(B_e=(c,d)\), es decir un básico de la topología euclidiana.
+\\Vemos que \(B_1\cap(B_e-k)=(B_1\cap B_e)-k\). Y sabemos que \(x\in B_1 \cap B_2\), entonces, \(x\in B_1 \cap B_e\) puesto que claramente no podría ser elemento de K. Pero como \(B_1\) y \(B_e\) son básicos de la topología euclidiana, sabemos que existe un \(B_{\alpha_0} \subset (B_1\cap B_e)\) tal que \(x\in B_{\alpha_0}\).
+\\\(\therefore\) Se cumple con el teorema de creación de topologías.\\
+\\Caso 3: Tenemos dos básicos de la forma \((a,b)-k\) con \(a<b\).
+\\Notemos que \(((a,b)-k)\cap((c,d)-k)=((a,b)\cap(c,d))-k\), por lo que obtendríamos un caso análogo al anterior. 
+\\\(\therefore\) Se cumple con el teorema de creación de topologías para todo caso.
+\\\(\therefore\) $\beta_K$ es una topología.
 \paragraph{6}
 \textit{Verificar que $B_S=\{(a,b]:a<b$\} es base de algunas topologias}
 %procedimiento
@@ -79,7 +89,7 @@ Sea \(y\in(x,\epsilon)\) donde x denota el centro y el espilón el radio de la b
 \\Sea \(x\in(a,b)\)x\((c,d): a<b y c<d\),
 \\tomamos \(\delta=min\{(x,(a,b)),(x,(c,d)),(x,(a,c)),(x,(b,d))\}\), entonces, La bola \((x,\frac{\delta}{2})\subset(a,b)\)x\((c,d)\), donde \(x\in(x,\frac{\delta}{2})\)
 \\\(\therefore\tau_{\mathbb{R} \times \mathbb{R}}\subset\tau_{\mathbb{R}^2}\)
-\\\(\therefore\) como se cumplen ambas contenciones; \(\therefore\tau_{\mathbb{R} \times \mathbb{R}}\tau_{\mathbb{R}^2}\)
+\\\(\therefore\) como se cumplen ambas contenciones; \(\tau_{\mathbb{R} \times \mathbb{R}}=\tau_{\mathbb{R}^2}\)
 \paragraph{9}
 \textit{Terminar paso inductivo del teorema de las proyecciones}
 

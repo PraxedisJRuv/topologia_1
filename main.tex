@@ -159,4 +159,47 @@ Juntando todo lo que tenemos, $U \cap (D_{1} \cap D_{2})$
 $= (U \cap D_{1}) \cap D_{2} \neq \varnothing$, por teorema
 se tiene que $D_{1} \cap D_{2}$ es denso.
 
+\paragraph{21}
+\textit{Verificar la convergencia de $\left\{\frac{1}{n}\right\}$ donde $n \in N $, bajo la topolog\'ia del l\'imite superior }
+
+Sea la sucesi\'on \(\left\{\frac{1}{n}\right\}\), donde \(n\) pertenece a los naturales. Bajo la topolog\'ia del l\'imite superior, la convergencia se verifica observando que la sucesi\'on tiende a 0 cuando \(n \to \infty\). Para cualquier \(\epsilon > 0\), existe un \(N\) tal que para todo \(n > N\), \(\frac{1}{n} < \epsilon\), lo cual demuestra que la sucesión converge a 0 bajo esta topolog\'ia. 
+
+Por lo tanto \(\left\{\frac{1}{n}\right\}\) converge a 0 bajo la topolog\'ia del l\'imite superior
+
+\paragraph{22}
+\textit{Verificar si \(\tau_{\infty}\) es Hausdorff.}
+
+Sean \(x, y \in X\) dos puntos distintos, consideremos los conjuntos abiertos \(U = X - \{y\}\) y \(V = X - \{x\}\), abiertos en \(\tau_{\infty}\)
+vemos \(U \cap V = X - \{x, y\}\), que no es vac\'io
+
+Se obiene que \(x \in U\) y \(x \in U\), esto implica que la intersecci\'on \(U\) y \(V\) no es vacía, lo que significa que no podemos separar los puntos
+\(x\) y \(y\) por conjuntos abiertos disjuntos, por lo tanto \(\tau_{\infty}\) no es Hausdorff.
+
+\paragraph{23}
+\textit{Demostrar que \(\overline{A \times B} = \overline{A} \times \overline{B}\).}
+
+\paragraph{24}
+\textit{Demostrar que \(\tau_Y\) es la topología del subespacio de \( X \).}
+
+1. \( \emptyset \) y \( Y \) est\'an en \( \tau_Y \) se sabe que \( \emptyset \in \tau_X \) y \( X \in \tau_X \)
+entonces \( \emptyset \cap Y = \emptyset \) y \( X \cap Y = Y \) están en \( \tau_Y \), por lo tanto \( \emptyset, Y \in \tau_Y \).
+
+2. Cerradura de uniones: Sea \( \{ U_i \}_{i \in I} \) una colecci\'on de conjuntos de \( \tau_Y \)
+se quiere demostrar que la unión de la colecci\'on \( \bigcup_{i \in I} U_i \), está en \( \tau_Y \), se tiene que
+
+\[
+\bigcup_{i \in I} U_i = \bigcup_{i \in I} (V_i \cap Y) = \left( \bigcup_{i \in I} V_i \right) \cap Y.
+\]
+entonces la unión de cualquier colecci\'on de conjuntos de \( \tau_Y \) pertenece a \( \tau_Y \).
+
+3. Cerradura bajo intersecciones: sea \( \{ U_1, U_2, \dots, U_n \} \) ,es decir, \( U_i = V_i \cap Y \) para algún \( V_i \in \tau_X \) y para cada \( i \). 
+Por conjuntos se tiene que
+\[
+\bigcap_{i=1}^n U_i = \bigcap_{i=1}^n (V_i \cap Y) = \left( \bigcap_{i=1}^n V_i \right) \cap Y.
+\]
+
+por lo tanto, la intersección de cualquier colecci\'on finita de conjuntos de \( \tau_Y \) pertenece a \( \tau_Y \), 
+concluimos que \( \tau_Y \) es una topolog\'ia sobre \( Y \).
+
+
 \end{document}

@@ -177,6 +177,42 @@ Se obiene que \(x \in U\) y \(x \in U\), esto implica que la intersecci\'on \(U\
 
 \paragraph{23}
 \textit{Demostrar que \(\overline{A \times B} = \overline{A} \times \overline{B}\).}
+Demostramos que $\overline{A \times B} \subseteq \overline{A} \times \overline{B}$
+
+Sea $(x, y) \in \overline{A \times B}$. Esto significa que para toda vecindad $U \times V$ de $(x, y)$, se tiene que:
+\[
+(U \times V) \cap (A \times B) \neq \emptyset.
+\]
+Dado que la intersección del producto es el producto de las intersecciones:
+\[
+(U \times V) \cap (A \times B) = (U \cap A) \times (V \cap B) \neq \emptyset,
+\]
+se sigue que $U \cap A \neq \emptyset$ y $V \cap B \neq \emptyset$.
+Por lo tanto, $x \in \overline{A}$ y $y \in \overline{B}$, lo que implica que $(x, y) \in \overline{A} \times \overline{B}$. Así, obtenemos la inclusión deseada.
+
+Demostramos que $\overline{A} \times \overline{B} \subseteq \overline{A \times B}$
+
+Sea $(x, y) \in \overline{A} \times \overline{B}$, es decir, $x \in \overline{A}$ y $y \in \overline{B}$. Esto significa que:
+\[
+\forall \text{ vecindad } U \text{ de } x, \quad U \cap A \neq \emptyset,
+\]
+\[
+\forall \text{ vecindad } V \text{ de } y, \quad V \cap B \neq \emptyset.
+\]
+Tomando cualquier vecindad $U \times V$ de $(x, y)$, se tiene que:
+\[
+(U \cap A) \times (V \cap B) \neq \emptyset.
+\]
+Es decir,
+\[
+(U \times V) \cap (A \times B) \neq \emptyset.
+\]
+Dado que esto es cierto para toda vecindad $(U \times V)$ de $(x, y)$, se concluye que $(x, y) \in \overline{A \times B}$. Así, obtenemos la segunda inclusión.
+
+Como hemos demostrado ambas inclusiones, concluimos que:
+\[
+\overline{A \times B} = \overline{A} \times \overline{B}.
+\]
 
 \paragraph{24}
 \textit{Demostrar que \(\tau_Y\) es la topología del subespacio de \( X \).}

@@ -62,17 +62,52 @@ Sea $x\in\bigcup\limits_{n\in\mathbb{N}-\{1\}}[\frac{1}{n},1)$, entonces $0<\fra
 
 \paragraph{5}
 \textit{Verificar que $\beta_K$ satisface el teorema de creación de topologías.}
-%procedimiento
+\\Esto lo dividiremos en tres casos.\\
+\\Caso 1: Tomamos básicos de la forma \((a,b)\) tales que \(a<b\) de la base
+\\Los básicos son iguales a los de la topología euclidiana, para la cual sabemos que cumple el teorema de creación de topologías ya que si \(x\in B_1 \cap B_2\), entonces, existe \(B_{\alpha_0} \subset B_1 \cap B_2\) tal que \(x\in B_{\alpha_0}\).\\
+\\Caso 2: Tenemos un básico de la forma \(B_1=(a,b)\) con \(a<b\) y otro de la forma \(B_2=(c,d)-k\) con \(c<d\). Además \(x\in B_1 \cap B_2\).
+\\Notemos que \((c,d)-k\) es de la forma \(B_e-k\) con \(B_e=(c,d)\), es decir un básico de la topología euclidiana.
+\\Vemos que \(B_1\cap(B_e-k)=(B_1\cap B_e)-k\). Y sabemos que \(x\in B_1 \cap B_2\), entonces, \(x\in B_1 \cap B_e\) puesto que claramente no podría ser elemento de K. Pero como \(B_1\) y \(B_e\) son básicos de la topología euclidiana, sabemos que existe un \(B_{\alpha_0} \subset (B_1\cap B_e)\) tal que \(x\in B_{\alpha_0}\).
+\\\(\therefore\) Se cumple con el teorema de creación de topologías.\\
+\\Caso 3: Tenemos dos básicos de la forma \((a,b)-k\) con \(a<b\).
+\\Notemos que \(((a,b)-k)\cap((c,d)-k)=((a,b)\cap(c,d))-k\), por lo que obtendríamos un caso análogo al anterior. 
+\\\(\therefore\) Se cumple con el teorema de creación de topologías para todo caso.
+\\\(\therefore\) $\beta_K$ es una topología.
 \paragraph{6}
 \textit{Verificar que $B_S=\{(a,b]:a<b$\} es base de algunas topologias}
 %procedimiento
 
 \paragraph{7}
 \textit{Verificar las comparaciones entre $\tau_S, \tau_L$ y entre $\tau_S, \tau_K$}
-
+\\Consideraremos $B_S=\{(a,b] : a<b\}$ como la base la de la topología del límite superior ($\tau_S$), $B_L=\{[a,b) : a<b\}$ como la base de la topología del límite inferior ($\tau_L$), $B_k=\{(a,b) : a<b\}\bigcup\{(a,b)-k : a<b, k=\frac{1}{n}, n\in\mathbb{N}\}$\\
+\\1. Verificamos las comparaciones entre $\tau_S$ y $\tau_L$
+\\Tomemos $(0,1] \in B_S $ y $x=1$ tal que $x \in (0,1]$. Considere $[a,b) \in B_L$ tal que $x\in[a,b)$. Entonces $a\leq x<b$ pero como $x=1<b$ entonces $b \notin (0,1]$, $[a,b)\not\subset(0,1]$
+\\\(\therefore\)Por teorema de comparación $\tau_S \not\subset \tau_L$
+\\Tomemos $[0,1) \in B_L $ y $x=0$ tal que $x \in [0,1)$. Considere $(a,b] \in B_S$ tal que $x\in(a,b]$. Entonces $a<x\leq b$ pero como $a<x=0$ entonces $a \notin [0,1)$, $(a,b]\not\subset[0,1)$
+\\\(\therefore\)Por teorema de comparación $\tau_L \not\subset \tau_S$
+\\\(\therefore\)$\tau_S$ y $\tau_L$ no son comparables.\\
+\\2. Verificamos ahora la comparación entre $\tau_S$ y $\tau_K$
+\\Sea $(0,1] \in B_S$ y $x=1$ tal que $x\in(0,1]$. Considere $(a,b)\in B_K$ tal que $x \in (a,b)\iff a<1<b$, entonces $b\notin(0,1]$, $(a,b)\not\subset(0,1]$
+\\\(\therefore\)Por teorema de comparación $\tau_S \not\subset \tau_K$
+\\Caso 1: básicos de la forma $(a,b)$
+Sea $(a,b)\in B_k$ y $x\in(a,b)$. Considere $x \in (a,x]\in B_S$. Sean $y\in(a,x] \iff a<y \leq x$ y como $x\in(a,b)\iff a<x<b$, $a<y<b$, es decir $y\in(a,b), y\in(a,x]\subset(a,b)$
+\\\(\therefore\)Por teorema de comparación se cumple para el primer caso
+\\Caso 2: Básicos de la forma $(a,b)-k$
+\\Sea $(a,b)-l \in B_K$ y $x\in(a,b)-k$. Considere $a,x]\in B_S$, si $a<\frac{1}{n}$ para algún $n \in \mathbb{N}$ entonces existe $q_i\in k,$ tal que $a<q_i<x, i\in\{0,1,2,...\}$, entonces tomamos $q=max\{q_0,q_1,q_2,...\}$, así describiendo $(q,x]\in B_S$, y como $a<q<x<b$, entonces, $(q,x]\subset(a,b)-k$
+\\\(\therefore\)Por teorema de comparación se cumple para este segundo caso también, por lo que $\tau_K \subset \tau_S$
+\\\(\therefore\)La topología del límite superior es más fina que la k-topología.
 \paragraph{8}
 \textit{Demostrar si $\tau_{\mathbb{R}^2}=\tau_{\mathbb{R} \times \mathbb{R}}$}
-
+\\Primero vemos si \( \tau_{\mathbb{R}^2}\) es más fina que \(\tau_{\mathbb{R} \times \mathbb{R}}\)
+Sea \(y\in(x,\epsilon)\) donde x denota el centro y el espilón el radio de la bola. Este es un básico en la topología \( \tau_{\mathbb{R}^2}\) y al ser topología, podemos hallar un básico \((y,\delta)\subset(x,\epsilon)\) con claramente \(\delta<\epsilon\).
+\\Si quisieramos inscribir un rectángulo, consideraríamos a \(\delta\) como la diagonal mayor, entonces, \(\delta=\frac{\sqrt{a^2+a^2}}{2}\), siendo a los lados de nuestro cuadrado. Despejando obtendríamos la expresión \(\sqrt{2}\delta=a\). Considerando a \(a<\sqrt{2}\delta\), obtendríamos el cuadrado \((y-a,y+a)\)x\((y-a,y+a)\subset(y,\delta)\subset(x,\epsilon)\). por transtitivadad de contenciones obtendríamos:
+\\\(y\in(y-a,y+a)\)x\((y-a,y+a)\subset(x,\epsilon)\)
+\\\(\therefore\tau_{\mathbb{R}^2}\subset\tau_{\mathbb{R} \times \mathbb{R}}\)
+\\Ahora verificamos la otra contención.
+\\Sea \(x\in(a,b)\)x\((c,d): a<b y c<d\),
+\\tomamos \(\delta=min\{(x,(a,b)),(x,(c,d)),(x,(a,c)),(x,(b,d))\}\), entonces, La bola \((x,\frac{\delta}{2})\subset(a,b)\)x\((c,d)\), donde \(x\in(x,\frac{\delta}{2})\)
+\\\(\therefore\tau_{\mathbb{R} \times \mathbb{R}}\subset\tau_{\mathbb{R}^2}\)
+\\\(\therefore\) como se cumplen ambas contenciones; \(\tau_{\mathbb{R} \times \mathbb{R}}=\tau_{\mathbb{R}^2}\)
 \paragraph{9}
 \textit{Terminar paso inductivo del teorema de las proyecciones}
 

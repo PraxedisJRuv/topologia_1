@@ -77,7 +77,23 @@ Sea $x\in\bigcup\limits_{n\in\mathbb{N}-\{1\}}[\frac{1}{n},1)$, entonces $0<\fra
 
 \paragraph{7}
 \textit{Verificar las comparaciones entre $\tau_S, \tau_L$ y entre $\tau_S, \tau_K$}
-
+\\Consideraremos $B_S=\{(a,b] : a<b\}$ como la base la de la topología del límite superior ($\tau_S$), $B_L=\{[a,b) : a<b\}$ como la base de la topología del límite inferior ($\tau_L$), $B_k=\{(a,b) : a<b\}\bigcup\{(a,b)-k : a<b, k=\frac{1}{n}, n\in\mathbb{N}\}$\\
+\\1. Verificamos las comparaciones entre $\tau_S$ y $\tau_L$
+\\Tomemos $(0,1] \in B_S $ y $x=1$ tal que $x \in (0,1]$. Considere $[a,b) \in B_L$ tal que $x\in[a,b)$. Entonces $a\leq x<b$ pero como $x=1<b$ entonces $b \notin (0,1]$, $[a,b)\not\subset(0,1]$
+\\\(\therefore\)Por teorema de comparación $\tau_S \not\subset \tau_L$
+\\Tomemos $[0,1) \in B_L $ y $x=0$ tal que $x \in [0,1)$. Considere $(a,b] \in B_S$ tal que $x\in(a,b]$. Entonces $a<x\leq b$ pero como $a<x=0$ entonces $a \notin [0,1)$, $(a,b]\not\subset[0,1)$
+\\\(\therefore\)Por teorema de comparación $\tau_L \not\subset \tau_S$
+\\\(\therefore\)$\tau_S$ y $\tau_L$ no son comparables.\\
+\\2. Verificamos ahora la comparación entre $\tau_S$ y $\tau_K$
+\\Sea $(0,1] \in B_S$ y $x=1$ tal que $x\in(0,1]$. Considere $(a,b)\in B_K$ tal que $x \in (a,b)\iff a<1<b$, entonces $b\notin(0,1]$, $(a,b)\not\subset(0,1]$
+\\\(\therefore\)Por teorema de comparación $\tau_S \not\subset \tau_K$
+\\Caso 1: básicos de la forma $(a,b)$
+Sea $(a,b)\in B_k$ y $x\in(a,b)$. Considere $x \in (a,x]\in B_S$. Sean $y\in(a,x] \iff a<y \leq x$ y como $x\in(a,b)\iff a<x<b$, $a<y<b$, es decir $y\in(a,b), y\in(a,x]\subset(a,b)$
+\\\(\therefore\)Por teorema de comparación se cumple para el primer caso
+\\Caso 2: Básicos de la forma $(a,b)-k$
+\\Sea $(a,b)-l \in B_K$ y $x\in(a,b)-k$. Considere $a,x]\in B_S$, si $a<\frac{1}{n}$ para algún $n \in \mathbb{N}$ entonces existe $q_i\in k,$ tal que $a<q_i<x, i\in\{0,1,2,...\}$, entonces tomamos $q=max\{q_0,q_1,q_2,...\}$, así describiendo $(q,x]\in B_S$, y como $a<q<x<b$, entonces, $(q,x]\subset(a,b)-k$
+\\\(\therefore\)Por teorema de comparación se cumple para este segundo caso también, por lo que $\tau_K \subset \tau_S$
+\\\(\therefore\)La topología del límite superior es más fina que la k-topología.
 \paragraph{8}
 \textit{Demostrar si $\tau_{\mathbb{R}^2}=\tau_{\mathbb{R} \times \mathbb{R}}$}
 \\Primero vemos si \( \tau_{\mathbb{R}^2}\) es más fina que \(\tau_{\mathbb{R} \times \mathbb{R}}\)

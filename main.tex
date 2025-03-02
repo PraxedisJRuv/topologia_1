@@ -151,7 +151,15 @@ $\overline{A \cap B} \subset \overline{A} \cap \overline{B}$.
 
 \paragraph{19}
 \textit{Verificar si $Int(A\cap B)=Int(A)\cap Int(B)$}
-
+\\$A$ y $B$ Son subconjunots de $X$, donde $(X, \tau)$ es un espacio toplológico.\\
+\\Primero probaremos que si $A\subset B$, entonces $Int(A)\subset Int(B)$  
+\\Sabemos que $Int(A)\subset A \subset B$, que por transitividad $Int(A) \subset B$, pero $Int(B)$ es el mayor abierto en $X$ contenido en B.
+\\$\therefore Int(A) \subset Int(B)$\\
+\\Como  $A\cap B \subset B$, entonces $Int(A\cap B)\subset Int(B)$. Además $A\cap B \subset A$, entonces $Int(A\cap B)\subset Int(A)$.
+\\$\therefore Int(A\cap B) \subset Int(B)\cap Int(A)$\\
+\\Como $Int(A) \subset A$ e $Int(B) \subset B$, entonces $Int(A) \cap Int(B) \subset A \cap B$, pero $Int(A \cap B)$ es el mayor abierto de $X$ contenido en $A\cap B$
+\\$\therefore Int(A) \cap Int(B)\subset Int(A\cap B)$
+\\$\therefore$ Por la contención anterioir y esta última tenemos que  $Int(A) \cap Int(B)= Int(A\cap B)$
 \paragraph{20}
 \textit{Verificar que si $D_{1}, D_{2}$ son densos y abiertos en $X$, entonces $D_{1} \cap D_{2}$ es denso en $X$}
 
